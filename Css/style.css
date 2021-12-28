@@ -32,9 +32,10 @@ body {
     color: var(--color-one);
 }
 
-.right-header {
+
+/* .right-header {
     padding-right: 70px;
-}
+} */
 
 .top-header {
     height: 60px;
@@ -106,10 +107,11 @@ body {
     padding-right: 90px;
 }
 
-.our-deals-btn {
+
+/* .our-deals-btn {
     padding-left: 90px;
     padding-right: 90px;
-}
+} */
 
 .statistics {
     /* height: 100vh; */
@@ -148,6 +150,7 @@ body {
     font-size: 4rem;
     color: var(--color-one);
     margin-bottom: 20px;
+    padding: 0% 90px;
 }
 
 .stats h4 {
@@ -160,6 +163,20 @@ body {
     padding-top: 20px;
     padding-bottom: 10px;
     background-color: var(--color-four);
+}
+
+.create-profile h4 {
+    font-size: 14px;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.create-profile a {
+    text-decoration: none;
+    padding: 5px 70px;
+    background: var(--color-one);
+    border-radius: 5px;
+    color: var(--color-eight);
 }
 
 .profile i {
@@ -362,18 +379,30 @@ body {
 .hero-btn {
     text-decoration: none;
     color: var(--color-one);
-    font-size: 14px;
-    padding: 3px 15px;
-    border: 1px solid var(--color-one);
+    font-size: 20px;
+    /* width: 100px; */
+    /* height: 80px; */
+    /* width: 80px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid var(--color-one); */
     background-color: transparent;
+    /* border-radius: 50%; */
     border-radius: 30px;
     margin-right: 10px;
-    margin-bottom: 10px;
+}
+
+.hero-btn h6 {
+    margin-bottom: 0;
+    margin-top: 5px;
+    font-size: 14px;
 }
 
 .hero-btn:hover {
     background-color: white;
-    color: var(--dark-text-color);
+    color: var(--color-two);
 }
 
 .search-box::placeholder {
@@ -398,7 +427,7 @@ body {
 }
 
 .input-group {
-    width: 180px;
+    width: 250px;
     /* height: 30px; */
     border: 1px solid var(--color-one);
     border-radius: 35px;
