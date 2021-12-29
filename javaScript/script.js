@@ -1,29 +1,29 @@
-$(document).ready(function() {
-    $('.first-slider').owlCarousel({
-        // nav: true,
-        loop: true,
-        autoplay: true,
-        // margin: 100,
-        autoplayTimeout: 2500,
-        // navText: ["<i class='fas fa-angle-left'></i>", "<i class='fas fa-angle-right'></i>"],
-        center: true,
-        responsive: {
-            320: {
-                items: 1,
-                // nav: false,
-            },
-            576: {
-                items: 2,
-                // nav: true,
-            },
-            1350: {
-                items: 4,
-                // nav: true,
-            }
+// $(document).ready(function() {
+//     $('.first-slider').owlCarousel({
+//         // nav: true,
+//         loop: true,
+//         autoplay: true,
+//         // margin: 100,
+//         autoplayTimeout: 2500,
+//         // navText: ["<i class='fas fa-angle-left'></i>", "<i class='fas fa-angle-right'></i>"],
+//         center: true,
+//         responsive: {
+//             320: {
+//                 items: 1,
+//                 // nav: false,
+//             },
+//             576: {
+//                 items: 2,
+//                 // nav: true,
+//             },
+//             1350: {
+//                 items: 4,
+//                 // nav: true,
+//             }
 
-        }
-    });
-});
+//         }
+//     });
+// });
 
 
 
@@ -92,7 +92,7 @@ $(document).scroll(function($) {
 
 $(document).ready(function() {
     $('.upcomingEvents').owlCarousel({
-        // loop: true,
+        loop: true,
         margin: 10,
         // nav: true,
         autoplay: true,
@@ -166,4 +166,38 @@ $('input').on('change', function() {
 
 $(document).ready(function() {
     $('.carousel').carousel();
+});
+
+// $(document).ready(function() {
+//     $('.first-slider').slick({
+//         setting - name: setting - value
+//     });
+// });
+$(document).ready(function() {
+    $('.first-slider').slick({
+        centerMode: true,
+        centerPadding: '100px',
+        focusOnSelect: true,
+        slidesToShow: 3,
+
+        responsive: [{
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
 });

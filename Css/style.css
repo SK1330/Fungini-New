@@ -278,8 +278,9 @@ body {
 }
 
 .first-slider {
-    padding-left: 40px;
-    padding-right: 40px;
+    width: 90%;
+    /* padding-left: 40px; */
+    /* padding-right: 40px; */
 }
 
 .right-block {
@@ -297,8 +298,9 @@ body {
 
 .deal-block {
     /* z-index: 5; */
-    width: 240px;
+    /* width: 240px; */
     height: 250px;
+    padding-top: 30px;
     background: white;
     /* padding: 20px; */
     border-radius: 20px;
@@ -306,10 +308,16 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    /* margin-right: 20px; */
+    margin-top: 0px;
+    /* margin-bottom: 20px; */
+    margin-right: 30px;
     border: 2px solid var(--backgroud-color);
+}
+
+.slick-center {
+    transition: 1s;
+    transform: scale(1.1);
+    border-radius: 20px;
 }
 
 .deal-block h6 {
@@ -369,10 +377,14 @@ body {
     border: 2px solid var(--color-one);
     border-radius: 30px;
     font-size: 14px;
+    /* display: block; */
 }
 
 .connect {
-    margin: auto;
+    /* margin: auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* margin-top: 70px; */
 }
 
@@ -391,7 +403,17 @@ body {
     background-color: transparent;
     /* border-radius: 50%; */
     border-radius: 30px;
-    margin-right: 10px;
+    /* margin-right: 10px; */
+}
+
+.hero-btn i {
+    width: 50px;
+    height: 50px;
+    background: var(--color-three);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
 }
 
 .hero-btn h6 {
@@ -400,10 +422,11 @@ body {
     font-size: 14px;
 }
 
-.hero-btn:hover {
+
+/* .hero-btn:hover {
     background-color: white;
     color: var(--color-two);
-}
+} */
 
 .search-box::placeholder {
     color: black;
